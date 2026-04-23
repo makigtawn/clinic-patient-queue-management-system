@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/clinic_queue_server.dir/main.cpp.o -o clinic_queue_server 

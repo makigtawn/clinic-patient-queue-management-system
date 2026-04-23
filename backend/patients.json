@@ -1,0 +1,7 @@
+{
+  "patients": [
+    { "id": "A1", "name": "liya", "age": 21, "disease": "cold" },
+    { "id": "A2", "name": "alem", "age": 78, "disease": "chronic disease" },
+    { "id": "A3", "name": "abebe", "age": 65, "disease": "heart attack" }
+  ]
+}

@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #005a8d;
+  font-weight: 600;
+}
+
+/* Form */
+#patientForm {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+#patientForm input,
+#patientForm button {
+  padding: 0.8rem 1rem;
+  border: 1px solid #d0d7e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+#patientForm input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+#patientForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+  justify-self: center;
+  width: min(220px, 100%);
+}
+
+#patientForm button:hover {
+  background-color: #0056b3;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.actions button,
+.actions input {
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+}
+
+#serveBtn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#serveBtn:hover {
+  background-color: #218838;
+}
+
+#searchId {
+  border: 1px solid #d0d7e0;
+  border-radius: 8px;
+  flex: 1 1 200px;
+}
+
+#searchBtn,
+#displayBtn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#searchBtn:hover,
+#displayBtn:hover {
+  background-color: #5a6268;
+}
+
+/* Patient list header */
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Table */
+#patientsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e4e9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#patientsTable th,
+#patientsTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e4e9;
+}
+
+#patientsTable th {
+  background-color: #e9f3ff;
+  color: #005a8d;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+#patientsTable tr:last-child td {
+  border-bottom: none;
+}
+
+#patientsTable tbody tr:hover {
+  background-color: #f8fafd;
+}
+
+#searchResult {
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #f0f6ff;
+  border: 1px solid #c9dbef;
+  margin-top: 1rem;
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #patientForm {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  #searchId {
+    flex: none;
+  }
+
+  #patientsTable {
+    font-size: 0.9rem;
+  }
+
+  #patientsTable th,
+  #patientsTable td {
+    padding: 0.6rem;
+  }
+}
+
+/* tablet */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .container {
+    padding: 1.25rem;
+    margin: 1.5rem;
+  }
+
+  #patientForm {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  #patientsTable {
+    font-size: 0.95rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  #patientForm {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #patientForm button {
+    grid-column: 1 / -1;
+  }
+
+  #actions {
+    flex-direction: row;
+  }
+}
+
+br {
+  display: none;
+}

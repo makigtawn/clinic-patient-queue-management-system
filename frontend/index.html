@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Patients </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Patients Information</h1>
+        <form id="patientForm">
+            <input type="text" id="id"  placeholder="Patient ID" required> <br>
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="number" id="age" placeholder="Age" required><br>
+            <input type="text" id="disease" placeholder="Disease" required>
+            <button type="submit">Add Patient</button>
+        </form>
+        <div class="actions">
+            <button id="serveBtn">Serve Patient</button>
+            <input type="text" id="searchId" placeholder="Search by ID">
+            <button id="searchBtn">Search</button>
+            <button id="displayBtn">Display All</button>
+        </div>
+        <h2>Patient List (<span id="count">0</span>)</h2>
+        <table id="patientsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Disease</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div id="searchResult"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

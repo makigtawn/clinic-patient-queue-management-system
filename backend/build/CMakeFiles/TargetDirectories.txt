@@ -1,0 +1,3 @@
+/home/meklit/Desktop/clinic-patient-queue/backend/build/CMakeFiles/clinic_queue_server.dir
+/home/meklit/Desktop/clinic-patient-queue/backend/build/CMakeFiles/edit_cache.dir
+/home/meklit/Desktop/clinic-patient-queue/backend/build/CMakeFiles/rebuild_cache.dir
