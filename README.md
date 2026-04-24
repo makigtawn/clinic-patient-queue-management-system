@@ -22,7 +22,7 @@ clinic-patient-queue/
 
 ### Prerequisites
 
-- CMake (>= 3.x)
+- CMake (3.0)
 - C++ compiler (recommended: g++)
 - Node.js (optional, for serving frontend)
 
