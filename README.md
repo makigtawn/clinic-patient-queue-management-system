@@ -88,7 +88,6 @@ http://localhost:8000
 
 ## Notes
 
-- This project is designed for learning purposes (data structures + system integration).
 - The queue implementation is manual (linked list), not STL-based, to reinforce core concepts.
 - it can extended with:
   - Persistence (file or database)
@@ -100,5 +99,5 @@ http://localhost:8000
 - Replace linked list with priority queue for triage systems
 - Add API validation and error handling
 - Introduce logging for backend operations
-- Convert frontend into a modern framework (React, Vue, etc.)
+- Convert frontend into a modern framework like react or vue. 
 - Add unit tests for queue operations
