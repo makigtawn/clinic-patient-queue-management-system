@@ -101,3 +101,4 @@ http://localhost:8000
 - Introduce logging for backend operations
 - Convert frontend into a modern framework like react or vue. 
 - Add unit tests for queue operations
+ ## currently the crow_all.h library is in development so the system is no longer working.
